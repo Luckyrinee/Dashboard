@@ -1,0 +1,33 @@
+.user-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    width: 220px;
+    text-align: center;
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.user-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.user-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.user-card p,
+.user-card small {
+    font-size: 14px;
+    color: #333;
+    margin: 4px 0;
+    word-break: break-all;
+    white-space: normal;
+}
