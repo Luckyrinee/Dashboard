@@ -8,9 +8,69 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px; /* Adiciona espaçamento entre os cartões */
+}
+
+.user-card {
+  width: 200px; /* Define um tamanho fixo para os cartões */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
 }
 
 .html,body {
   justify-content: center;
   display: flex;
+  background-color: rgb(63, 63, 63);
+}
+
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #646cff;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .user-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .pagination button {
+    width: 100%;
+  }
+
+  .user-card {
+    width: 90%; 
+  }
 }
